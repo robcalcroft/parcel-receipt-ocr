@@ -1,0 +1,12 @@
+body {
+  font-family: system-ui;
+  color: white;
+  background-color: #101935;
+}
+
+.tesseractImage {
+  display: block;
+  max-width: 50%;
+  margin: auto;
+  max-height: 35vh;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parcel Receipt OCR</title>
+  </head>
+  <body>
+    <h1>📷 🧾 🔍 🔤</h1>
+    <h1>Parcel receipt OCR</h1>
+    <p>Choose an image from your photos using the button below, and have it scanned <strong>on device</strong> to find a tracking code for Hermes UK and Royal Mail (support for more soon)</p>
+    <p>
+      <strong>Please zoom your camera in so that the receipt fills the frame</strong>
+    </p>
+    <p>
+      <input type="file" id="userUpload" accept="image/*" />
+      <img
+        id="tesseractImage"
+        class="tesseractImage"
+      />
+    </p>
+    <p>
+      <details>
+        <summary>Show full text</summary>
+        <div id="result"></div>
+      </details>
+    </p>
+    <h2>Log</h2>
+    <div id="log"></div>
+  </body>
+  <script src="https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js"></script>
+  <script src="index.js"></script>
+</html>
